@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+ 
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    background-image: linear-gradient(to right, rgba(224, 97, 97, 0), rgba(255,0,0,1));
+}
+
+.container {
+	position: relative;
+	width: 80%;
+	height: 90%;
+	background-color: rgb(226, 105, 105);
+	overflow: hidden;
+	display: flex;
+}
+
+.player {
+	flex: 50%;
+	padding: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: all 0.75s;
+}
+
+.name {
+	position: relative;
+	font-weight: bold;
+	font-size: 38px;
+	text-align: center;
+}
+
+.pl {
+	font-size: 24px;
+}
+
+.tscore {
+	background-color: #fff;
+	border-radius: 9px;
+	width: 65%;
+	padding: 2rem;
+	text-align: center;
+	transition: all 0.75s;
+}
+
+.score {
+	font-size: 38px;
+	font-weight: bold;
+	margin-bottom: auto;
+	padding-top: 10px;
+}
+
+.player--active {
+	background-color: rgb(217, 80, 80);
+}
+
+.player--active .current {
+	opacity: 1;
+}
+
+.current {
+	margin-top: 10rem;
+	background-color: #fff;
+	border-radius: 9px;
+	width: 65%;
+	padding: 2rem;
+	text-align: center;
+	transition: all 0.75s;
+}
+
+.current-label {
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+	font-size: 1.7rem;
+	color: black;
+}
+
+.current-score {
+	font-size: 3.5rem;
+}
+
+.btn {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	color: rgb(203, 39, 39);
+	border: none;
+	font-size: 30px;
+	cursor: pointer;
+	font-weight: bold;
+	background-color: rgb(246, 246, 246);
+	backdrop-filter: blur(10px);
+	padding: 10px 30px;
+	border-radius: 10px;
+}
+
+.btn--new {
+	top: 4rem;
+}
+
+.btn--roll {
+	top: 28.3rem;
+}
+
+.btn--hold {
+	top: 36.1rem;
+}
+
+#dice {
+    position: absolute;
+    left: 50%;
+    top: 15rem;
+    transform: translateX(-50%);
+    width: 102px;
+	border-radius: 8px;
+	box-shadow: rgba(40, 39, 39, 0.747) 4px 8px 24px 10px;
+}
+
+.player--winner {
+	background-color: rgb(12 12 12 / 93%);
+}
+
+.player--winner .name {
+	font-weight: 700;
+	color: #c7365f;
+}
+
+.hidden {
+	display: none;
+}
